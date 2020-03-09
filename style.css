@@ -1,0 +1,159 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.img {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url("../img/image1.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("../img/image2.jpg");
+  min-height: 65%;
+}
+
+.img3 {
+  background-image: url("../img/image3.jpg");
+  min-height: 65%;
+}
+
+.img4 {
+  background-image: url("../img/image4.jpg");
+  min-height: 65%;
+}
+
+.img5 {
+  background-image: url("../img/image5.jpg");
+  min-height: 65%;
+}
+
+.img6 {
+  background-image: url("../img/image6.jpg");
+  min-height: 65%;
+}
+.img7 {
+  background-image: url("../img/image7.jpg");
+  min-height: 100%;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark,
+.dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+footer div {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.text .border.trans {
+  background-color: transparent;
+  text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 10px rgba(0, 0, 0, 0.95);
+}
+
+.sal-signature {
+  mask-image: url(./img/created-by-salamandra-s.png);
+  -webkit-mask-image: url(./img/created-by-salamandra-s.png);
+  -webkit-mask-size: auto 70px;
+  mask-size: auto 70px;
+  height: 70px;
+  width: auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.shine {
+  background-repeat: no-repeat;
+  background-position: -200px -200px, 0 0;
+  background-image: -webkit-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-image: -moz-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-image: -o-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-image: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  -moz-background-size: 200% 200%, 100% 100%;
+  background-size: 200% 200%, 100% 100%;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.shine:hover {
+  background-position: 0 0, 0 0;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+@media (max-width: 568px) {
+  .img {
+    background-attachment: scroll;
+  }
+}
